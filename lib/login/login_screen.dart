@@ -182,10 +182,7 @@ Widget buildLoginBtn() {
              if (_formKey.currentState.validate()) {
                  ApiService connexion = new ApiService();
                 var response = await connexion.signIn(emailController.value.text, passwordController.value.text);
-
-                //SharedPreferences preferences = await SharedPreferences.getInstance();
-                //preferences.setString('email', emailController.value.text);
-                //Navigator.pushNamed(context, EtudiantHome.routeName);
+                
                 print(response["Data"]);
                 //print("Roles " + response[1]);
                 if (response["StatusCode"] == 401) {
