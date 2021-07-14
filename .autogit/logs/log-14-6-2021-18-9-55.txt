@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jul 14 2021 18:09:55 GMT+0000 (heure moyenne de Greenwich)
+------------------------------------------------------
+
+Modified files:
+* lib/login/login_screen.dart
+* pubspec.yaml
+
+
+Created files:
+* .autogit/autogit.json
+
+
+Deleted files:
+
+
+Renamed files:
