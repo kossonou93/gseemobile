@@ -175,8 +175,13 @@ Widget buildLoginBtn() {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 35),
       width: double.infinity,
-      child: RaisedButton(
-        elevation: 5,
+      child: ElevatedButton(
+        child: Text('Connexion'),
+        style: ElevatedButton.styleForm({
+          Color primary,
+          double elevation
+        }),
+        //elevation: 5,
         onPressed: () async{
           //Navigator.pushNamed(context, EtudiantHome.routeName)
              if (_formKey.currentState.validate()) {
@@ -221,21 +226,21 @@ Widget buildLoginBtn() {
               }
             },
         //=> print('Login Pressed'),
-        padding: EdgeInsets.all(15),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15)
+        //padding: EdgeInsets.all(15),
+        //shape: RoundedRectangleBorder(
+         // borderRadius: BorderRadius.circular(15)
         ),
-        color: Color(0xFF283593),
-        child: Text(
+        //color: Color(0xFF283593),
+        /*child: Text(
           "Connexion",
           style: TextStyle(
             color: Colors.white,
             fontSize: 18,
             fontWeight: FontWeight.bold
           ),
-        ),
-        )
-    );
+        ),*/
+        );
+    //);
   }
 
 }
